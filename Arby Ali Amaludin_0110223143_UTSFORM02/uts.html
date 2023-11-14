@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaya Service</title>
+    <!-- Logo -->
+    <link
+      rel="icon"
+      href="img/Logo-Car-service-center-on-transparent-background-PNG.png"
+      type="image/x-icon"
+    />
+
+    <!-- Internal CSS -->
+    <style>
+      body {
+        font-size: 18px;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      .form1 {
+        margin-bottom: 10px;
+        margin-left: 50px;
+      }
+
+      textarea {
+        margin-left: 170px;
+        margin-top: -16px;
+      }
+
+      .submit {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        margin-left: 50px;
+      }
+
+      .reset {
+        margin-top: -23px;
+        margin-left: 125px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Booking Service</legend>
+
+      <!-- Formulir -->
+      <form action="action.php" method="post">
+        <div class="form1">
+          <label for="kendaraan">Jenis Kendaraan</label>
+          <select name="kendaraan" id="kendaraan" name="kendaraan" required>
+            <option value="ken1">Motor</option>
+            <option value="ken2">Minibus</option>
+            <option value="ken3">Mobil Travel</option>
+          </select>
+        </div>
+        <div class="form1">
+          <label for="name">Nama Pemesan :</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form1">
+          <label for="Kategori">Kategori Peminjam :</label>
+          <input type="radio" id="kat1" name="kategori" />
+          <label for="kat1">Pribadi</label>
+          <input type="radio" id="kat2" name="kategori" />
+          <label for="kat2">Perusahaan/Organisasi</label>
+        </div>
+        <div class="form1">
+          <label for="des">Deskripsi Kebutuhan :</label>
+          <br />
+          <textarea name="des" id="des" cols="40" rows="4"></textarea>
+        </div>
+        <div class="form1">
+          <label for="tanggal">Jam, tanggal Service :</label>
+          <input type="datetime-local" id="tanggal" required />
+        </div>
+        <div class="form1">
+          <label for="req">Request Montir :</label>
+          <input type="text" id="req" />
+        </div>
+        <div class="form1">
+          <label for="tlp">Telephone/HP :</label>
+          <input type="number" id="tlp" required />
+        </div>
+        <div class="form1">
+          <label for="mail">Email :</label>
+          <input type="email" />
+        </div>
+        <!-- Formulir End -->
+
+        <!-- Sesi Akhir -->
+        <div class="submit">
+          <input type="submit" />
+        </div>
+        <div class="reset">
+          <input type="reset" />
+        </div>
+      </form>
+    </fieldset>
+  </body>
+</html>
